@@ -1,0 +1,141 @@
+/* global styles */
+html, body{
+  width: 100%;
+  /*height: 100%;*/
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: helvetica;
+  opacity: 0;
+  animation-name: media;
+  animation-duration: 1s;
+  animation-delay: .25s;
+  animation-fill-mode: forwards;
+}
+
+body{
+  /*background-color: #F0F0F0;*/
+  background-color: #F0F0F0;
+}
+
+h1{
+  font-family: aktiv-grotesk-extended;
+  font-weight: bold;
+}
+
+a, a:visited{
+  color: inherit;
+}
+
+.black{
+  color: #141204;
+}
+.white{
+  color: #F0F0F0;
+}
+.blue, a:hover.blue{
+  color: #2828FF;
+}
+.yellow, a:hover.yellow{
+  color: #F0A202;
+}
+.green, a:hover.green{
+  color: #248232;
+}
+.red, a:hover.red{
+  color: #C5283D;
+}
+.brown, a:hover.brown{
+  color: #92817A;
+}
+
+#content{
+  margin: 4em;
+  color: #141204;
+
+}
+
+/* lil knicknacks */
+#buffer{
+  height: 4em;
+}
+
+#bottom-gradient{
+  width: 100%;
+  height: 15%;
+  position: absolute;
+  bottom: 0;
+}
+
+#credits{
+  position: fixed;
+  font-size: .75em;
+  font-weight: lighter;
+  bottom: .25em;
+  left: 5em;
+}
+
+/* navigation bar */
+.navbar{
+  position: fixed;
+  top: 2em;
+  left: 4em;
+  padding: 0;
+  width: 100%;
+  height: 4em;
+  background-color: transparent;
+  animation-name: media;
+  animation-duration: 1s;
+  animation-delay: .25s;
+}
+
+.navlogo{
+  width: auto;
+  height: auto;
+  margin-right: 5em;
+  color: #F0F0F0;
+  float: left;
+  /*
+  position: absolute;
+  top: 500px;
+  left: 0;
+  padding: 1em;
+  */
+  font-size: .625em;
+  font-weight: normal;
+}
+.navlogo h1{
+  height: auto;
+  margin: .75em;
+  font-size: auto;
+}
+
+.navlink, .navlink:active, .navlink:visited{
+  height: auto;
+  color: #141204;
+  text-decoration: none;
+  float: left;
+  font-size: .6em;
+  margin-left: 1em;
+  margin-right: 1em;
+  transition: .5s;
+  font-size: auto;
+}
+.navlink:hover{
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: .25em;
+}
+#navlink-this{
+  text-decoration: underline;
+  text-decoration-thickness: .25em;
+  color: inherit;
+}
+
+
+
+/* animations */
+@keyframes media {
+  0%    {opacity: 0}
+  100%  {opacity: 1}
+}
