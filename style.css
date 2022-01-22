@@ -80,13 +80,15 @@ a, a:visited{
   position: fixed;
   top: 2em;
   left: 4em;
+  margin-right: 4em;
   padding: 0;
-  width: 100%;
+  width: auto;
   height: 4em;
   background-color: transparent;
   animation-name: media;
   animation-duration: 1s;
   animation-delay: .25s;
+  z-index: 1;
 }
 
 .navlogo{
@@ -132,7 +134,57 @@ a, a:visited{
   color: inherit;
 }
 
+/* gallery display */
+#gallery-container{
+  opacity: 0;
+  width: 100%;
+  animation-name: media;
+  animation-duration: 1s;
+  animation-delay: .75s;
+  animation-fill-mode: forwards;
+}
 
+#gallery-list{
+  list-style-type: none;
+  padding: 0;
+}
+
+.gallery-card{
+  float: left;
+  width: 30em;
+  max-width: 100%;
+  height: 30em;
+  /*min-height: 30em;*/
+  margin: 2.5%;
+  padding: 0px;
+  background-position: center;
+  background-size: cover;
+}
+.gallery-card img{
+  width: 100%;
+}
+.gallery-card-info{
+  max-width: 50%;
+  margin: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  color: #F0F0F0;
+  background-color: #141204;
+}
+
+.fade-in{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  opacity: 0;
+  transition: .5s;
+  overflow: auto;
+}
+.fade-in:hover{
+  opacity: 1;
+}
 
 /* animations */
 @keyframes media {
