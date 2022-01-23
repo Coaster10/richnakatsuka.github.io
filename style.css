@@ -186,6 +186,35 @@ a, a:visited{
   opacity: 1;
 }
 
+/* layout styles for individual project pages */
+.pic-grid{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.pic-grid a{
+  margin: 0;
+  padding: 0;
+}
+
+.column-single{
+  width: 100%;
+  padding: 1%;
+}
+
+.column-double{
+  width: 48%;
+  float: left;
+  padding: 1%;
+}
+
+.column-triple{
+  width: 31%;
+  float: left;
+  padding: 1%;
+}
+
 /* animations */
 @keyframes media {
   0%    {opacity: 0}
