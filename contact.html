@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>rich nakatsuka | tufts observer covers</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ehr2rsw.css">
+  <!-- <link rel="stylesheet" type="text/css" href="bg-anim.css"> -->
+
+  <!-- scripts -->
+</head>
+<body>
+  <!-- navigation bar -->
+  <div class="navbar" style="color:#141204;">
+    <div class="navlogo" style="background-color: #92817A;">
+      <h1>rich <!--<br>-->nakatsuka</h1>
+    </div>
+    <a href="https://richnakatsuka.github.io/portfolio/" class="blue">
+      <div class="navlink">
+        <h1>about</h1>
+      </div>
+    </a>
+    <a href="https://richnakatsuka.github.io/portfolio/urban.html" class="green">
+      <div class="navlink">
+        <h1>urban design</h1>
+      </div>
+    </a>
+    <a href="https://richnakatsuka.github.io/portfolio/graphic.html" class="yellow">
+      <div class="navlink">
+        <h1>graphic design</h1>
+      </div>
+    </a>
+    <a href="https://richnakatsuka.github.io/portfolio/arch.html" class="red">
+      <div class="navlink">
+        <h1>architecture</h1>
+      </div>
+    </a>
+    <a href="https://richnakatsuka.github.io/portfolio/contact.html" class="brown">
+      <div class="navlink" id="navlink-this">
+        <h1>contact</h1>
+      </div>
+    </a>
+  </div>
+
+  <!-- content -->
+  <div id="buffer"></div>
+  <div id="content">
+    <h1>contact</h1>
+    <div class="column-double">
+      <img class="column-double" src="assets/me.jpg" style="width: 100%;">
+      <img src="assets/business_card_back.jpg" style="width: 60%; box-shadow: 5px 5px 5px gray; transform: rotate(-13deg); position: relative; right: -40%; bottom: 3vh; z-index: 1;">
+      <img src="assets/business_card_front.jpg" style="width: 40%; box-shadow: 5px 5px 5px gray; transform: rotate(4deg); position: relative; right: -5%; bottom: 33vh;">
+    </div>
+    <div class="column-double">
+      <p>Want to get in touch? Let's chat!</p>
+      <p>Fill out the form below to send me an email, and I'll get back to you as soon as I can.</p>
+      <form action="contactform.php" name="contactform" method="post" enctype="multipart/form-data">
+        <h3>name: </h3><span class="red">*</span><br>
+        <div class="column-double">
+          <input type="text" name="name_first" required><br>
+          <p>first name</p>
+        </div>
+        <div class="column-double">
+          <input type="text" name="name_last" required><br>
+          <p>last name</p>
+        </div>
+        <h3>pronouns: </h3><br>
+        <div class="column-single">
+          <input type="text" name="pronouns">
+        </div>
+        <h3>e-mail: </h3><span class="red">*</span><br>
+        <div class="column-single">
+          <input type="email" name="email" required>
+        </div>
+        <h3>message: </h3><span class="red">*</span><br>
+        <div class="column-single">
+          <textarea name="message" rows="2" required></textarea>
+        </div>
+        <input type="submit" value="send!" class="send-button">
+      </form>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <!-- <div id="bottom-gradient" class="blue" style="background-image: linear-gradient(rgba(255,0,0,0), currentColor);">
+  </div> -->
+  <div id="credits" class="brown">
+    <p>&copy; Richard Nakatsuka 2022. Hand-coded with love.</p>
+  </div>
+
+</body>
+</html>
