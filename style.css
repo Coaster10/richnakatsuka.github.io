@@ -75,6 +75,52 @@ a, a:visited{
   left: 5em;
 }
 
+/* forms */
+form{
+
+}
+form input, form textarea{
+  margin-top: .5em;
+  margin-bottom: .25em;
+  height: 2em;
+  width: 97%;
+  border-radius: .5em;
+  border-style: solid;
+  border-width: .1em;
+  border-color: gray;
+}
+form input:active, form textarea:active, form input:target, form textarea:target{
+  border-style: double;
+  border-radius: .5em;
+  border-width: .1em;
+  border-color: #2828FF;
+}
+form textarea{
+  height: 4em;
+  font-family: helvetica;
+}
+form h1, form h2, form h3{
+  font-family: aktiv-grotesk-extended;
+  font-weight: bold;
+  display: inline;
+  margin-bottom: .75em;
+  margin-top: 2em;
+}
+form p{
+  display: inline;
+  color: gray;
+  font-weight: lighter;
+}
+.send-button{
+  font-family: aktiv-grotesk-extended;
+  font-weight: bold;
+  color: #F0F0F0;
+  background-color: #2828FF;
+  height: 3em;
+  width: auto;
+  border-radius: .5em;
+}
+
 /* navigation bar */
 .navbar{
   position: fixed;
