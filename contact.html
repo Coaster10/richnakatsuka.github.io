@@ -46,9 +46,11 @@
   <div id="content">
     <h1>contact</h1>
     <div class="column-double">
-      <img class="column-double" src="assets/me.jpg" style="width: 100%;">
-      <img src="assets/business_card_back.jpg" style="width: 60%; box-shadow: 5px 5px 5px gray; transform: rotate(-13deg); position: relative; right: -40%; bottom: 3vh; z-index: 1;">
-      <img src="assets/business_card_front.jpg" style="width: 40%; box-shadow: 5px 5px 5px gray; transform: rotate(4deg); position: relative; right: -5%; bottom: 33vh;">
+      <img src="assets/me.jpg" style="width: 100%;">
+      <div style="position: relative; top: 0;">
+        <img src="assets/business_card_back.jpg" style="width: 25vw; box-shadow: 5px 5px 5px gray; transform: rotate(-13deg); position: relative; right: -40%; bottom: 3vh; z-index: 1;">
+        <img src="assets/business_card_front.jpg" style="width: 16vw; box-shadow: 5px 5px 5px gray; transform: rotate(4deg); position: absolute; left: 2vw; top: -2vw;">
+      </div>
     </div>
     <div class="column-double">
       <p>Want to get in touch? Let's chat!</p>
@@ -56,11 +58,11 @@
       <form onsubmit="window.location='mailto:richard.nakatsuka@gmail.com?subject=New%20Website%20Contact%3A%20' + contactform.name_first.value + '%20' + contactform.name_last.value + '%20(' + contactform.pronouns.value + ')' + '&body=' + contactform.message.value + '%0D%0APreferred%20reply%2Dto%20e%2Dmail%3A%20' + contactform.email.value" name="contactform" method="post" enctype="multipart/form-data">
         <h3>name: </h3><span class="red">*</span><br>
         <div class="column-double">
-          <input type="text" name="name_first" required><br>
+          <input type="text" name="name_first" required autocomplete="given-name"><br>
           <p>first name</p>
         </div>
         <div class="column-double">
-          <input type="text" name="name_last" required><br>
+          <input type="text" name="name_last" required autocomplete="family-name"><br>
           <p>last name</p>
         </div>
         <h3>pronouns: </h3><br>
@@ -69,7 +71,7 @@
         </div>
         <h3>e-mail: </h3><span class="red">*</span><br>
         <div class="column-single">
-          <input type="email" name="email" required>
+          <input type="email" name="email" required autocomplete="email">
         </div>
         <h3>message: </h3><span class="red">*</span><br>
         <div class="column-single">
