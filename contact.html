@@ -48,14 +48,15 @@
     <div class="column-double">
       <img src="assets/me.jpg" style="width: 100%;">
       <div style="position: relative; top: 0;">
-        <img src="assets/business_card_back.jpg" style="width: 25vw; box-shadow: 5px 5px 5px gray; transform: rotate(-13deg); position: relative; right: -40%; bottom: 3vh; z-index: 1;">
         <img src="assets/business_card_front.jpg" style="width: 16vw; box-shadow: 5px 5px 5px gray; transform: rotate(4deg); position: absolute; left: 2vw; top: -2vw;">
+        <img src="assets/business_card_back.jpg" style="width: 25vw; box-shadow: 5px 5px 5px gray; transform: rotate(-13deg); position: relative; right: -40%; bottom: 3vh;">
       </div>
     </div>
     <div class="column-double">
       <p>Want to get in touch? Let's chat!</p>
       <p>Fill out the form below to send me an email, and I'll get back to you as soon as I can.</p>
-      <form onsubmit="window.location='mailto:richard.nakatsuka@gmail.com?subject=New%20Website%20Contact%3A%20' + contactform.name_first.value + '%20' + contactform.name_last.value + '%20(' + contactform.pronouns.value + ')' + '&body=' + contactform.message.value + '%0D%0APreferred%20reply%2Dto%20e%2Dmail%3A%20' + contactform.email.value" name="contactform" method="post" enctype="multipart/form-data">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfaFtPeQj8CjLq5k7-1ejjE-IVwTHz9a7PEfead9d_jF7ojiw/viewform?embedded=true" width="100%" height="1040" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <!--<form onsubmit="window.location='mailto:richard.nakatsuka@gmail.com?subject=New%20Website%20Contact%3A%20' + contactform.name_first.value + '%20' + contactform.name_last.value + '%20(' + contactform.pronouns.value + ')' + '&body=' + contactform.message.value + '%0D%0APreferred%20reply%2Dto%20e%2Dmail%3A%20' + contactform.email.value" name="contactform" method="post" enctype="multipart/form-data">
         <h3>name: </h3><span class="red">*</span><br>
         <div class="column-double">
           <input type="text" name="name_first" required autocomplete="given-name"><br>
@@ -78,7 +79,7 @@
           <textarea name="message" rows="2" required></textarea>
         </div>
         <input type="submit" value="send!" class="send-button">
-      </form>
+      </form>-->
     </div>
   </div>
 
