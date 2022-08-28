@@ -173,10 +173,12 @@ form p{
   color: inherit;
   text-decoration: underline;
   text-decoration-thickness: .25em;
+  text-underline-offset: .25em;
 }
 #navlink-this{
   text-decoration: underline;
   text-decoration-thickness: .25em;
+  text-underline-offset: .25em;
   color: inherit;
 }
 
