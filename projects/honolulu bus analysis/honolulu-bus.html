@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>rich nakatsuka | honolulu public transit access analysis</title>
+  <link rel="stylesheet" type="text/css" href="../../style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ehr2rsw.css">
+  <!-- <link rel="stylesheet" type="text/css" href="bg-anim.css"> -->
+
+  <!-- scripts -->
+</head>
+<body>
+  <!-- navigation bar -->
+  <div class="navbar" style="color:#141204;">
+    <div class="navlogo" style="background-color: #F0A202;">
+      <h1>rich <!--<br>-->nakatsuka</h1>
+    </div>
+    <a href="https://richnakatsuka.github.io/portfolio/" class="blue">
+      <div class="navlink">
+        <h1>about</h1>
+      </div>
+    </a>
+    <a href="https://richnakatsuka.github.io/portfolio/urban.html" class="green">
+      <div class="navlink" id="navlink-this">
+        <h1>urban design</h1>
+      </div>
+    </a>
+    <a href="https://richnakatsuka.github.io/portfolio/graphic.html" class="yellow">
+      <div class="navlink">
+        <h1>graphic design</h1>
+      </div>
+    </a>
+    <a href="https://richnakatsuka.github.io/portfolio/arch.html" class="red">
+      <div class="navlink">
+        <h1>architecture</h1>
+      </div>
+    </a>
+    <a href="https://richnakatsuka.github.io/portfolio/contact.html" class="brown">
+      <div class="navlink">
+        <h1>contact</h1>
+      </div>
+    </a>
+  </div>
+
+  <!-- content -->
+  <div id="buffer"></div>
+  <div id="content">
+    <h1>honolulu public transit access analysis</h1>
+    <p>This project was done for a GIS class in college, where I chose to analyze how adequately (or inadequately) different areas of the island of O'ahu are served by Honolulu's urban bus system.</p>
+    <p>The final analysis showed that, while the most centrally located parts of the Honolulu metropolitan area receive relatively adequate, frequent service, there are large areas of the city which receive inadequate levels of service. These included areas such as West Oahu, East Honolulu, and Kaneohe/Kailua.</p>
+    <ul class="pic-grid">
+      <a href="gis101_finalposter.jpg"><img class="column-single" src="gis101_finalposter.jpg"></a>
+    </ul>
+    <p>Analysis was done through a combination of methods, using information from the US Census Bureau, the City and County of Honolulu, and Oahu Transit Services (operators of TheBus and related services.)</p>
+    <p>The first step of the analysis was to calculate a "level of demand" for transit service in each part of the city, at the census tract level. This was done by combining population density and employment density of each tract in a weighted suitability analysis.</p>
+    <ul class="pic-grid">
+      <a href="pop map legend.png"><img class="column-double" src="pop map legend.png"></a>
+      <a href="job map legend.png"><img class="column-double" src="job map legend.png"></a>
+      <a href="prefinal 1 map legend.png"><img class="column-single" src="prefinal 1 map legend.png"></a>
+    </ul>
+    <p>Next, a "level of service" for transit was calculated by accounting for the highest and lowest frequencies of service at each stop for each route, the 1/4 mile walking catchment area of each bus stop, and the discrepancy between the highest and lowest levels of frequency on each route (with routes receiving a penalty for higher differences.) The dataset that was used in ArcGIS to display route frequencies as an attribute of each route was copied by hand from TheBus's 2019 timetable system map.</p>
+    <ul class="pic-grid">
+      <a href="routes h map legend.png"><img class="column-triple" src="routes h map legend.png"></a>
+      <a href="routes l map legend.png"><img class="column-triple" src="routes l map legend.png"></a>
+      <a href="coverage comparison map legend.png"><img class="column-triple" src="coverage comparison map legend.png"></a>
+      <a href="prefinal 2 map legend.png"><img class="column-single" src="prefinal 2 map legend.png"></a>
+    </ul>
+    <p>Finally, the "transit service" score was subtracted from the "transit need" score for the entire island, leaving the difference between the two as the metric by which to measure how adequately served a neighborhood is.</p>
+    <ul class="pic-grid">
+      <a href="final analysis map legend.png"><img class="column-single" src="final analysis map legend.png"></a>
+    </ul>
+  </div>
+
+  <!-- footer -->
+  <!-- <div id="bottom-gradient" class="blue" style="background-image: linear-gradient(rgba(255,0,0,0), currentColor);">
+  </div> -->
+  <div id="credits" class="green">
+    <p>&copy; Richard Nakatsuka 2022. Hand-coded with love.</p>
+  </div>
+
+</body>
+</html>
