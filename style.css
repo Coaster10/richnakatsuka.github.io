@@ -21,6 +21,14 @@ body{
 h1{
   font-family: aktiv-grotesk-extended;
   font-weight: bold;
+  margin-left: .25vw;
+  margin-right: .25vw;
+}
+
+p{
+  margin-left: .25vw;
+  margin-right: .25vw;
+  text-indent: 1em;
 }
 
 a, a:visited{
@@ -52,7 +60,10 @@ a, a:visited{
 #content{
   margin: 4em;
   color: #141204;
-
+  min-width: 50vw;
+  max-width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* lil knicknacks */
@@ -247,20 +258,20 @@ form p{
 }
 
 .column-single{
-  width: 100%;
-  padding: 1%;
+  width: calc(100% - .5vw);
+  margin: .25vw;
 }
 
 .column-double{
-  width: 48%;
+  width: calc(50% - .5vw);
   float: left;
-  padding: 1%;
+  margin: .25vw;
 }
 
 .column-triple{
-  width: 31%;
+  width: calc(100% / 3 - .5vw);
   float: left;
-  padding: 1%;
+  margin: .25vw;
 }
 
 /* animations */
