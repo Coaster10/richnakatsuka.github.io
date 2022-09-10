@@ -5,7 +5,7 @@ html, body{
   margin: 0;
   padding: 0;
   font-size: 100%;
-  font-family: helvetica;
+  font-family: aktiv-grotesk;
   opacity: 0;
   animation-name: media;
   animation-duration: 1s;
@@ -26,9 +26,7 @@ h1{
 }
 
 p{
-  margin-left: .25vw;
-  margin-right: .25vw;
-  text-indent: 1em;
+
 }
 
 a, a:visited{
@@ -66,9 +64,25 @@ a, a:visited{
   margin-right: auto;
 }
 
+#content h1{
+  line-height: 1.5em;
+  font-size: 24pt;
+  margin-bottom: 1em;
+}
+
+#content p{
+  font-weight: 300;
+  margin-left: .25vw;
+  margin-right: .25vw;
+  text-indent: 1em;
+  line-height: 1.5em;
+  font-size: 12pt;
+  letter-spacing: .01em;
+}
+
 /* lil knicknacks */
 #buffer{
-  height: 4em;
+  height: 7em;
 }
 
 #bottom-gradient{
@@ -134,10 +148,9 @@ form p{
 
 /* navigation bar */
 .navbar{
-  position: fixed;
-  top: 2em;
-  left: 4em;
-  margin-right: 4em;
+  position: absolute;
+  top: 4vh;
+  right: 2vw;
   padding: 0;
   width: auto;
   height: 4em;
@@ -151,30 +164,32 @@ form p{
 .navlogo{
   width: auto;
   height: auto;
-  margin-right: 5em;
+  /*margin-right: 5em;*/
   color: #F0F0F0;
   float: left;
+  position: fixed;
+  left: 4vw;
+  top: 4vh;
   /*
   position: absolute;
   top: 500px;
   left: 0;
   padding: 1em;
   */
-  font-size: .625em;
+  font-size: 8pt;
   font-weight: normal;
 }
 .navlogo h1{
   height: auto;
   margin: .75em;
-  font-size: auto;
 }
 
 .navlink, .navlink:active, .navlink:visited{
   height: auto;
   color: #141204;
   text-decoration: none;
-  float: left;
-  font-size: .6em;
+  float: right;
+  font-size: 8pt;
   margin-left: 1em;
   margin-right: 1em;
   transition: .5s;
@@ -278,4 +293,64 @@ form p{
 @keyframes media {
   0%    {opacity: 0}
   100%  {opacity: 1}
+}
+
+/* responsive css */
+@media (min-width: 897px) {
+  #content{
+    max-width: 50vw;
+  }
+
+  .navbar{
+    max-width: 70vw;
+  }
+}
+
+@media (max-width: 896px) {
+  #content{
+    max-width: 75vw;
+  }
+
+  .column-double{
+    width: calc(100% - .5vw);
+    margin: .25vw;
+  }
+
+  .column-triple{
+    width: calc(100% - .5vw);
+    margin: .25vw;
+  }
+
+  .navbar{
+    max-width: 65vw;
+  }
+
+  .navlogo, .navlink{
+    font-size: 6pt;
+  }
+}
+
+@media (max-width: 640px, max-width: ) {
+  #content{
+    max-width: 75vw;
+  }
+
+  .column-double{
+    width: calc(100% - .5vw);
+    margin: .25vw;
+  }
+
+  .column-triple{
+    width: calc(100% - .5vw);
+    margin: .25vw;
+  }
+
+  .navbar{
+    max-width: 50vw;
+    position: absolute;
+  }
+
+  .navlogo, .navlink{
+    font-size: 6pt;
+  }
 }
