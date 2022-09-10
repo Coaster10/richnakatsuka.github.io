@@ -330,7 +330,7 @@ form p{
   }
 }
 
-@media (max-width: 640px, max-width: ) {
+@media (max-width: 640px) {
   #content{
     max-width: 75vw;
   }
@@ -352,5 +352,21 @@ form p{
 
   .navlogo, .navlink{
     font-size: 6pt;
+  }
+}
+
+@media (max-aspect-ratio: 1/1) {
+  #content{
+    max-width: 75vw;
+  }
+
+  .column-double{
+    width: calc(100% - .5vw);
+    margin: .25vw;
+  }
+
+  .column-triple{
+    width: calc(100% - .5vw);
+    margin: .25vw;
   }
 }
