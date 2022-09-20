@@ -225,11 +225,11 @@ form p{
 
 .gallery-card{
   float: left;
-  width: 30em;
+  width: calc(50% - .5vw);
   max-width: 100%;
-  height: 30em;
+  height: calc(50vw / 2 - .5vw);
   /*min-height: 30em;*/
-  margin: 2.5%;
+  margin: .25vw;
   padding: 0px;
   background-position: center;
   background-size: cover;
@@ -239,13 +239,16 @@ form p{
 }
 .gallery-card-info{
   max-width: 50%;
-  margin: 2em;
+  margin: 1em;
   padding-left: 1em;
   padding-right: 1em;
   padding-top: .5em;
   padding-bottom: .5em;
   color: #F0F0F0;
-  background-color: #141204;
+  background-color: rgba(20, 18, 4, .9);
+  /*border-style: solid;
+  border-width: .05em;
+  border-color: #FFFFFF;*/
 }
 
 .fade-in{
@@ -328,6 +331,10 @@ form p{
   .navlogo, .navlink{
     font-size: 6pt;
   }
+
+  .gallery-card{
+    height: calc(75vw / 2 - .5vw);
+  }
 }
 
 @media (max-width: 640px) {
@@ -368,5 +375,10 @@ form p{
   .column-triple{
     width: calc(100% - .5vw);
     margin: .25vw;
+  }
+
+  .gallery-card{
+    height: calc(75vw - .5vw);
+    width: calc(75vw - .5vw);
   }
 }
